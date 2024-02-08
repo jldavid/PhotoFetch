@@ -18,10 +18,10 @@ struct ContentView: View {
                     url = URL(string: urlString)
                 }) {
                     Text("DOWNLOAD")
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                 }
                 .buttonStyle(.borderedProminent)
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
+                .frame(maxWidth: .infinit, alignment: .trailing)
             }
             AsyncImage(url: url) { image in
                 image
